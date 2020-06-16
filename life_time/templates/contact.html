@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact me</title>
+  </head>
+  <body>
+    <a href="{% url 'home'%}"> Get Home</a>
+    <h1>Contact Place</h1>
+
+    <form class="" action="{% url 'home' %}" method="get">
+          <p>Your Name</p>
+          <input type="text" placeholder="your name" name="name_contact" value="">
+          <p>E-mail</p>
+          <input type="email"placeholder="your email" name="email_contact" value="">
+          <br>
+          <p>Subject</p>
+          <select name="subject_contact">
+              <option value="Work">Work</option>
+              <option value="Consulting">Consulting</option>
+              <option value="Consulting">Teach</option>
+              <option value="Consulting">Question</option>
+
+          </select>
+
+          <p>Reason for contact</p>
+          <!-- <input type="radio" name="" value="">Enquiry <br>
+          <input type="radio" name="" value="">Comment <br>
+          <input type="radio" name="" value="">Other <br> -->
+
+          <textarea name="text_contact" cols="80" placeholder="Enter your message here..."></textarea><br>
+
+          <input type="submit" name="" value="Send">
+          <input type="reset" name="" value="Reset">
+        </form>
+
+  </body>
+</html>

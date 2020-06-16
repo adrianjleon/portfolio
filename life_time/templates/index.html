@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <meta charset="utf-8">
+    <title>Adrian's Information</title>
+  </head>
+  <body>
+    <h1>This is my first web page</h1>
+
+    <ul>
+      <li>views</li>
+      <li>urls</li>
+      <li>templates</li>
+      <li>settings</li>
+      <li>create the html</li>
+      <li>from django.shortcuts import render</li>
+      <li>create the html</li>
+      <li><a href="{% url 'contact'%}">Click to go to contact page</a></li>
+
+      <h1>Include the image</h1>
+      <img src="{% static 'udemy.png' %}" alt="">
+
+    </ul>
+    <script type="text/javascript" src="{% static 'main.js'%}">
+
+    </script>
+  </body>
+</html>
